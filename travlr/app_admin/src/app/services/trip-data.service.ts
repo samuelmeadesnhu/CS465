@@ -5,10 +5,10 @@ import { Trip } from '../models/trip'
 
 @Injectable()
 export class TripDataService {
-  
+
   constructor(private http: Http) { }
 
-  private apiBaseUrl = 'http://localhost:300/api/';
+  private apiBaseUrl = 'http://localhost:3000/api/';
 
   public getTrips(): Promise<Trip[]> {
     console.log('Inside TripDataServie#getTrips');
