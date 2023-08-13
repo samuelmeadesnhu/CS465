@@ -44,7 +44,8 @@ const tripsFindCode = async (req, res) => {
 }
 
 const tripsAddTrip = async (req, res) => {
-    model
+    res. set('Access-Control-Allow-Origin', '*');
+    Model
     .create({
         code: req.body.code,
         name: req.body.name,
@@ -70,7 +71,8 @@ const tripsAddTrip = async (req, res) => {
 
 const tripsUpdateTrip = async (req, res) => {
     console.log(req.body);
-    model
+    res.set('Access-Control-Allow-Origin', '*');
+    Model
         .findOneAndUpdate({ 'code': req.params.tripCode }, { 
             code: req.body.code,
             name: req.body.name,

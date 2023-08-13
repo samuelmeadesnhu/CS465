@@ -35,7 +35,9 @@ export class AddTripComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log('submit clicked')
     this.submitted = true;
+    console.log(this.addForm.valid)
     if (this.addForm.valid) {
       this.tripService.addTrip(this.addForm.value)
         .then(data => {

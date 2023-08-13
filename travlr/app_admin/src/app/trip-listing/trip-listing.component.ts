@@ -26,6 +26,11 @@ export class TripListingComponent implements OnInit {
     this.router.navigate(['add-trip']);
   }
 
+  private updateTrip(): void {
+    console.log('Inside TripsListingCompoent#updateTrip');
+    this.router.navigate(['edit-trip']);
+  }
+
   private getTrips(): void {
     console.log('Inside TripsListingCompoent#getTrips');
     this.message = 'Searching for trips';
