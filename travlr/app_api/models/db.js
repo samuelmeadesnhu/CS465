@@ -77,4 +77,5 @@ process.once('SIGUSR2', () => {
  connect();
 
 // bring in the mongoose schema
-require('./models/travlr');
+require('./travlr');
+require('./user');

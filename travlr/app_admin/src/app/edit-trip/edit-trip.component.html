@@ -1,6 +1,6 @@
 <div class="col-md-3">
     <h2 class="text-center">Edit Trip</h2>
-    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">  
+    <div [formGroup]="editForm" (ngSubmit)="onSubmit()">  
       <div class="form-group">
         <label>Code:</label>
         <input type="text" formControlName="code" placeholder="Code" class="form-control"
@@ -25,6 +25,6 @@
       <div>
         <button (click)="editTrip(trip)" class="btn btn-info">Edit</button>
       </div>
-  </form>
+    </div>
   </div>
   
